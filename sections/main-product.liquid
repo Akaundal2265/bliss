@@ -766,12 +766,12 @@ var pid=$(this).attr('pid');
               <li value="{{ value }}">{{ value }}</li>
               {% endfor %} 
 </ul>
-            <!-- <select hite="pt" {% if product.variants.size <= 1 %}style="display:none;" {% endif %}>
+           <select hite="pt" {% if product.variants.size <= 1 %}style="display:none;" {% endif %}>
               <option value="" disabled selected>Kies Wasmiddel</option>
                 {%- for value in option.values -%}
               <option value=" {{ value }} {{ value }}">{{ value }}</option>
               {% endfor %} 
-            </select> -->
+            </select> 
 {% endfor %}
             
           </div>
