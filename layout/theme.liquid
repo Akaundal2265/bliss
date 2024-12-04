@@ -413,6 +413,8 @@ $(document).ready(function() {
     console.log(inds)
      var vl= $(this).attr('value')
     $(this).parent().prev().text(vl);
+$(this).parent().next('select').prop('selectedIndex', inds).trigger('change');
+
   })
 });
      
