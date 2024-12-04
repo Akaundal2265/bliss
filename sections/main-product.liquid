@@ -35,9 +35,10 @@
       
             // Function to update based on selected values
             function updateSelection() {
-              console.log('test432')
+             
              $('.insert_val').empty();
                {% if  product.variants.size  == 1 %}
+                  console.log('single')
                 $('.subscribe-save.active .custom-select').each(function() {
      const color = $(this).find('select').eq(0).val();
 
@@ -54,6 +55,7 @@
 
                 {% else %}
                 $('.subscribe-save.active .custom-select').each(function() {
+                   console.log('notsingle')
                      const color = $(this).find('select').eq(0).val();
                     const size = $(this).find('select').eq(1).val();
 
