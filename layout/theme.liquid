@@ -409,6 +409,8 @@ $(document).ready(function() {
     
   })
   $('ul.optios_all li').click(function(){
+    var inds=$(this).index();
+    console.log(inds)
      var vl= $(this).attr('value')
     $(this).parent().prev().text(vl);
   })
