@@ -1,4 +1,4 @@
- {{ product.variants.size }}<div class="insert_val" style="display:none;" val=""></div>
+ <div class="insert_val" style="display:none;" val=""></div>
  
  <script>
     $('.subscribe-save input[type=radio],.custom-select select').change(function(){
@@ -37,7 +37,7 @@
             function updateSelection() {
               console.log('test432')
              $('.insert_val').empty();
-               {% if product.options.size  == 1 %}
+               {% if  product.variants.size  == 1 %}
                 $('.subscribe-save.active .custom-select').each(function() {
      const color = $(this).find('select').eq(0).val();
 
