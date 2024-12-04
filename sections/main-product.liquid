@@ -39,35 +39,35 @@
              $('.insert_val').empty();
                {% if  product.variants.size  == 1 %}
                   console.log('single')
-                $('.subscribe-save.active .custom-select').each(function() {
-     const color = $(this).find('select').eq(0).val();
+//                 $('.subscribe-save.active .custom-select').each(function() {
+//      const color = $(this).find('select').eq(0).val();
 
-     const combinedValue = color; // e.g., 'Bliss'
+//      const combinedValue = color; // e.g., 'Bliss'
 
-     const matchingOption = $('#hiddenSelect option[title="' + combinedValue + '"]');
+//      const matchingOption = $('#hiddenSelect option[title="' + combinedValue + '"]');
 
-     if (matchingOption.length) {
-        $('.insert_val').append(`${matchingOption.attr('vid')},`);
-    } else {
-        console.log('No matching option found.');
-    }
-});
+//      if (matchingOption.length) {
+//         $('.insert_val').append(`${matchingOption.attr('vid')},`);
+//     } else {
+//         console.log('No matching option found.');
+//     }
+// });
 
                 {% else %}
                 $('.subscribe-save.active .custom-select').each(function() {
                   
-                     const color = $(this).find('select').eq(0).val();
-                    const size = $(this).find('select').eq(1).val();
+                    //  const color = $(this).find('select').eq(0).val();
+                    // const size = $(this).find('select').eq(1).val();
 
-                     const combinedValue = color + size; // e.g., 'Bliss KleurM'
+                    //  const combinedValue = color + size; // e.g., 'Bliss KleurM'
 
-                     const matchingOption = $('#hiddenSelect option[title="' + combinedValue + '"]');
+                    //  const matchingOption = $('#hiddenSelect option[title="' + combinedValue + '"]');
 
-                     if (matchingOption.length) {
-                    $('.insert_val').append(`${matchingOption.attr('vid')},`)
-                     } else {
-                        console.log('No matching option found.');
-                    }
+                    //  if (matchingOption.length) {
+                    // $('.insert_val').append(`${matchingOption.attr('vid')},`)
+                    //  } else {
+                    //     console.log('No matching option found.');
+                    // }
                 });
                 {% endif %}
             }
